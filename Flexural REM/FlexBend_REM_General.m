@@ -50,6 +50,7 @@ function [t, yt, yxt, x_elem, phi_elem, omega] = ...
         options.BCcase = "Clamped-Free"
         options.StrainTF = false;
         options.normalize = true;
+        options.SLocs = (1/M) * (1:M) - (1/(2*M));
     end
 
 % --- Parse 'options' argument --------------------------- %
